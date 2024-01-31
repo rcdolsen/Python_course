@@ -1,0 +1,17 @@
+n = 0
+mult = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+while True:
+    print('Digite um numero inteiro para ver a tabuada')
+    try:
+        n = int(input())
+    except(ValueError):
+        print('Digite apenas numeros inteiros')
+        continue
+    break
+
+print('A taboada de ', n, 'e:')
+
+for i in mult:
+    x = n * i
+    print(f'{n} x {i}, = {x}')

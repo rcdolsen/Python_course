@@ -1,0 +1,12 @@
+
+[
+    { 
+        "name": "Marrom", 
+        "lastname": "Siqueira", 
+        "age": 5,
+        "adresses": [
+            {"line1": "Rua Alberto Sampaio"},
+            {"line2": "Rua Belize"}
+        ]
+    }
+]
