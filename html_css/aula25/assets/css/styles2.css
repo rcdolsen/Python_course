@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    /* tudo padrao com o display flex */
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    /* flex wrap quebra a linha */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    background: yellow;
+    height: 640px;
+    /* width: 640px; */
+    /* gap: 10px; */
+}
+
+.flex-item {
+    color: #fff;
+    width: 33.33%;
+    background: red;
+    /* margin: 10px; */
+}
+
+/* .flex-item:nth-child(3) {
+    font-size: 80px;
+} */

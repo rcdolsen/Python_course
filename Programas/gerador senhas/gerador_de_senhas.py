@@ -15,7 +15,7 @@ numbers = string.digits
 special = string.punctuation
 
 new_password = (''.join(SystemRandom().choices(
-    letters + numbers + special, k=8)))
+    letters + numbers + special, k=9)))
 
 site = input('Digite o site para essa senha: ').upper()
 passwords.append(f'{site}: {new_password}')

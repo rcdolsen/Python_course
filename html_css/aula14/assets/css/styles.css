@@ -1,0 +1,43 @@
+/* seletor all */
+* {
+    border: 0;
+    padding: 0;
+}
+
+/* seletor tag */
+/* seleciona todo h1 e todo p */
+h1, p {
+    color: purple;
+}
+
+/* selecao de dependentes */
+/* seleciona todo p e h2 dentro da section dentro da div dentro do body */
+body div section p,
+body div section h2 {
+    color: chartreuse;
+}
+
+.red {
+    color: red;
+}
+
+body .main p.pink {
+    font-style: italic;
+    color: pink;
+}
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+/* aplica o estilo so aos elementos com as classes pai e filha */
+.pai.filha {
+    color: palegoldenrod;
+}
+
+/* child selector */
+/* aplica o estilo so aos elementos que sao filhos de filhos*/
+.pai > .filha > .filha {
+    color: gold;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/9914bdfe-46f0-4e6d-9934-e8de6e607ee3/PT-pt-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+        #heading {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        #heading div {
+            width: 90%;
+            /* cria colunas com diferentes headings */
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1-class {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 15px;
+            /* todos fazem o mesmo */
+            /* padding: 15px 15 15 15px; */
+            /* padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px; */
+        }
+
+        #heading a {
+            color: red;
+            text-decoration: none;
+            font-family: sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1-class">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1-class">
+                <a href="#">Entrar</a>
+            </h2>
+        </div>
+    </header>
+</body>
+</html>

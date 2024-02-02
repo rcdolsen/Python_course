@@ -1,0 +1,40 @@
+/* 
+Style   ID;  Classes, atributos e pseudo-classes;    elementos e pseudo-elementos;
+1        0    0                                       0
+0        1    0                                       0
+0        0    1                                       0
+0        0    0                                       1
+*/
+
+/* o atributo style direto no html e o mais forte */
+/* !important sobrescreve tudo, evitar usar*/
+
+/* 1 0 0 */
+#p {
+    background: red !important;
+}
+
+/* 0 1 0 */
+.p {
+    background: yellow ;
+}
+
+/* 1 1 0 */
+#p.p {
+    background: blueviolet;
+}
+
+/* 1 1 1 */
+p#p.p {
+    background: pink;
+}
+
+/* 2 1 1 */
+#b p#p.p {
+    background: lemonchiffon;
+}
+
+/* 2 2 3 */
+body#b.bclass p#p.p::selection {
+    background: turquoise;
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 25px;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+
+/* criando variaveis */
+    grid-template-columns: [one] 1fr 
+    [two] 1fr 
+    [three] 1fr 
+    [four] 1fr;
+
+    grid-template-rows: [one] 1fr 
+    [two] 1fr 
+    [three] 1fr 
+    [four] 1fr;
+
+    gap: 1px;
+}
+
+.grid div{
+    background: blue;
+    min-height: 10px;
+}
+
+.grid div:nth-child(5) {
+    background: red;
+    /* o normal e usar span */
+    /* grid-column-start: one;
+    grid-column-end: four; */
+    /* grid-column: one / four; */
+    /* grid-row: one / four; */
+    grid-area: one / one / four /four;
+}

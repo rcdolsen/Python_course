@@ -1,0 +1,17 @@
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).parent
+FILES_DIR = ROOT_DIR / 'files'
+WINDOW_ICON_PATH = FILES_DIR / 'calc_icon.png'
+
+# colors
+PRIMARY_COLOR = '#1e81b0'
+DARK_PRIMARY_COLOR = '#16658a'
+DARKER_PRIMARY_COLOR = '#115270'
+
+# sizes
+BIG_FONT = 20
+MEDIUM_FONT = 15
+SMALL_FONT = 10
+TEXT_MARGIN = 4
+MINIMUM_WIDTH = 200

@@ -1,0 +1,20 @@
+/* ul li:nth-child(5) {
+    background-color: rebeccapurple;
+} */
+
+ul li:nth-child(even) {
+    background-color: wheat;
+}
+
+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(3n) {
+    background-color: brown;
+}
+
+/* 3 em 3 a partir do quinto */
+ul li:nth-child(3n+5) {
+    background-color: black;
+}

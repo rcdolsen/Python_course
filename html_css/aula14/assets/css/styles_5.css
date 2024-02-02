@@ -1,0 +1,37 @@
+.after::after {
+    content: ' - ';
+    background: red;
+    display: block;
+    color: black;
+}
+
+.before::before {
+    content: ' - ';
+    background: red;
+    display: block;
+    color: black;
+}
+
+p {
+    font-size: 24px;
+}
+p::first-letter {
+    font-size: 100px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    background: red;
+}
+
+p::selection {
+    background: red;
+    color: green;
+}
+
+::placeholder {
+    font-size: 30px;
+    color: red;
+}

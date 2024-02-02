@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* tira todo o estilo das listas feitos no html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            /* justify-content: center; */
+            align-items: center;
+            /* height: 50px; */
+            background: white;
+            padding: 10px 0px;
+        }
+
+        nav a {
+            color: white;
+            background:red;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+            'Helvetica Neue', sans-serif;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        nav a :hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            /* flex-direction: row; */
+            /* display flex faz o mesmo */
+            display: flex;
+            list-style: none;
+            background: white
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">Zelda</a></li>
+            <li><a href="#">Mario</a></li>
+        </ul>
+    </nav>
+        <!-- lista nao ordenada -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>    
+        <!-- lista ordenada -->
+    <!-- <ol type="A"> -->
+    <ol type="1" start="20">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>   
+    <dl>
+        <dt>coffee</dt>
+        <dd>pretin quentin</dd>
+        <dt>chocolate</dt>
+        <dd>amargo</dd>
+        <dd>ao leite</dd>
+    </dl>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odit non officiis nemo labore aliquid nam, vel minima sint ullam quam accusamus, fuga exercitationem eius tenetur iste nisi temporibus pariatur.</p>
+</body>
+</html>

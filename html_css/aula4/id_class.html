@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+
+    <style>
+        /* background e backgraund-color e a mesma coisa */
+        h1 {
+            background: red;
+        }
+        p {
+            background: blue;
+        }
+        /* para editar somente o id */
+        #heading-2 {
+            background: purple;
+        }
+        /* para editar somente a classe */
+        .fundo-vermelho {
+            background: red /*digitar !important* para forcar que sobrescreva, nao e recomendado/;
+            /* so outro id sobrescreve atributos de um id */
+        }
+        .bold {color: pink}
+    </style>
+</head>
+<body>
+    <!-- id nao pode se repetir, class pode -->
+    <h1 id="heading-1" class="fundo-vermelho borda-esquerda">
+        come here
+    </h1>
+    <h1 id="heading-2" class="fundo-vermelho">
+        come here
+    </h1>
+    <p>Quelque <b class="bold">chose</b>.</p>
+</body>
+</html>

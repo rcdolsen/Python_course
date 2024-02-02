@@ -1,0 +1,138 @@
+/* ja e display: block por padrao, e redundante especificar isso */
+/* overflow faz o texto nao sair do bloco */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.text {
+    box-sizing: border-box;
+    display: block;
+    background: red;
+    width: 50%;
+    max-width: 600px;
+    min-width: 0;
+    height: 50%;
+    max-height: 500px;
+    min-height: 10px;
+    overflow: auto;
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border: 5px dotted black;
+}
+
+.grid {
+    max-width: 1200px;
+    padding: 15px;
+    padding-top: 58px;
+    margin: 0 auto;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    /* display: border-box; */
+    width: 27%;
+    height: 300px;
+    /* background: red; */
+    /* margin: 10px; */
+    /* as margens se somam ao inves de se sobreporem */
+    float: left;
+    padding: 15px;
+}
+
+/* 
+p {
+    clear: both;
+} */
+
+.grid .col-content {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* as margens se somam ao inves de se sobreporem */
+    /* margin: 10px; */
+    /* float: left; */
+    /* border-radius: 100px 100px 100px 100px; */
+    border-radius: 50%;
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background: blanchedalmond;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    background: #333;
+}
+
+.full-page {
+    max-width: 1200px;
+    padding: 30px;
+    padding-top: 73px;
+    margin: 0 auto;
+}
+
+.full-page-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid .col {
+        width: 27%;
+    }
+}
+
+@media all and (min-width: 1201px) {
+    .grid .col {
+        width: 10%;
+    }
+}

@@ -1,0 +1,85 @@
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+/* quando passar o mouse em cima */
+.heading:hover {
+    background: red;
+}
+
+a {
+    color: green;
+}
+
+/* link nao visitado */
+a:link {
+    color: yellowgreen;
+}
+
+/* link ja visitado */
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    background: fuchsia;
+    color: black;
+    text-decoration: none;
+}
+
+/* foi clicado */
+a:active {
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid red;
+}
+
+input:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background-color: rgb(237, 240, 243);
+}
+
+input:checked {
+    height: 30px;
+    width: 30px;
+}
+
+input:checked + p {
+    transition: all 1s ease-in-out;
+    background-color: red;
+}
+
+input:not(:checked) + p {
+    transition: all 1s ease-in-out;
+    background-color: wheat;
+}
+
+input:required {
+    background: red;
+}
+
+li {
+    color: green;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+p:not(.middle) {
+    color: blue;
+}

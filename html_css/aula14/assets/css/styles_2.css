@@ -1,0 +1,57 @@
+/* seletor all */
+* {
+    border: 0;
+    padding: 0;
+}
+
+/* adjacent siblings selector */
+/* seleciona o primeiro p que venha depois de um h1 para pai com a classe pai */
+.pai h1+p {
+    color: chocolate;
+}
+
+/* seleciona o primeiro h1 que venha depois de um p para pai com a classe pai */
+.pai p+h1 {
+    color: aqua;
+}
+
+/* general siblings selector */
+/* seleciona todos os .um que venham depois de .dois dentro da classe pai */
+.pai .um~.dois {
+    color: greenyellow;
+}
+
+/* so vai selecionar quem tiver o atributo: meu-atributo com o valor: valor */
+[meu-atributo="valor"] {
+    color: red;
+}
+
+/* vai selecionar quem tiver o valor: valor1 */
+[meu-atributo~="valor1"] {
+    color: magenta;
+}
+
+/* vai selecionar quem tiver o valor: valor seguido por um - */
+[meu-atributo|="valor"] {
+    color: hotpink;
+}
+
+/* vai selecionar quem tiver o valor: valore independente de traco*/
+[meu-atributo^="valore"] {
+    color: wheat;
+}
+
+/* vai selecionar quem tiver o valor: 111 no final*/
+[meu-atributo$="111"] {
+    color: forestgreen;
+}
+
+/* vai selecionar quem tiver o valor 111 contido*/
+[meu-atributo*="222"] {
+    color: lightcoral;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}

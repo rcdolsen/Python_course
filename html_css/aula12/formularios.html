@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    label {
+        cursor: pointer;
+        /* display: block; */
+    }
+</style>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Formulario</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="your name"
+            required>
+        </p>
+
+        <p>
+            <label for="dev">am I a dev</label>
+            <input type="checkbox" id="dev" name="dev" value="Y">
+            <br>
+            <label for="dev">am I an unemployed</label>
+            <input type="checkbox" id="dev" name="dev" value="Y">
+            <br>
+            <label for="dev">am I rich</label>
+            <input type="checkbox" id="dev" name="dev" value="Y">
+        </p>
+
+        <p>
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <label for="dog">dog</label>
+            <input type="radio" id="dog" name="gender" value="dog">
+        </p>
+
+        <p>
+            <label for="datetime">Date:</label>
+            <input type="datetime-local" id="date" name="date" 
+            value="2023-12-19T12:30">
+        </p>
+
+        <p>
+            <label for="time">time:</label>
+            <input type="time" id="time" name="time" 
+            value="12:30:23">
+        </p>
+
+        <p>
+            <label for="color">fav color</label>
+            <input type="color" id="color" name="color" 
+            value="#FF0000">
+        </p>
+
+        <p>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" 
+            placeholder="email@email.com">
+        </p>
+
+        <p>
+            <label for="password">your password:</label>
+            <input type="password" id="password" name="password" 
+            placeholder="digite um password">
+        </p>
+
+        <p>
+            <label for="url">your url:</label>
+            <input type="url" id="url" name="url" 
+            placeholder="url">
+        </p>
+
+        <p>
+            <label for="password">your password:</label>
+            <input type="password" id="password" name="password" 
+            placeholder="digite um password">
+        </p>
+
+        <p>
+            <label for="range">range:</label>
+            <input type="range" id="range" name="range"
+            min="0" max="10" step="2">
+
+
+        <datalist id="tickmarks">
+            <option value="0" label="0%">
+            <option value="20" label="0%"> 
+            <option value="40" label="40%">
+            <option value="60" label="60%">
+            <option value="80" label="0%">
+            <option value="100" label="100%">
+        </datalist>
+        </p>
+
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" 
+            placeholder="digite um number" min="1" max="20">
+        </p>
+
+        <p>
+            <label for="file">sua foto:</label>
+            <input type="file" id="file" name="file" accept=".png,.svg,image/*">
+        </p>
+
+        <p>
+            <label for="select">select an option:</label>
+            <select id="select">
+                <optgroup label="test">
+                    <option value="any 1" label="value 1">value</option>
+                    <option value="any 2" label="value 2" disabled>value</option>
+                    <option value="any 3" label="value 3"selected>value</option>
+                    <option value="any 4" label="value 4">value</option>
+                </optgroup>
+                
+                <optgroup label="test2">
+                    <option value="any 1" label="value 1">value</option>
+                    <option value="any 2" label="value 2" disabled>value</option>
+                    <option value="any 3" label="value 3"selected>value</option>
+                    <option value="any 4" label="value 4">value</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea name="textarea" id="textarea" rows="8" cols="20">
+your text here
+            </textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+</body>
+</html>

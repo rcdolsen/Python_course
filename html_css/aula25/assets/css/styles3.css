@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    /* display: inline-flex; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    background: yellow;
+    height: 90vh;
+    width: 90vw;
+}
+
+.flex-item {
+    /* flex grox divide o espaco que sobra e distribui igualmente */
+    /* flex-grow: 1; */
+    /* flex-basis: 320px; */
+    /* flex shrink impede que o elemento diminua quando diminui a tela */
+    /* flex-shrink: 0; */
+    /* atalho: grow, shrink, basis*/
+    /* recomendado */
+    flex: 1 0 32px;
+    color: #fff;
+    /* width: 32%; */
+    /* margin-bottom: 2%; */
+    /* height: 100px; */
+    background: red;
+    margin: 1px;
+}
+
+.flex-item:nth-child(3) {
+    flex: 20 1 320px;
+    /* font-size: 80px; */
+    background: purple;
+    align-self: stretch;
+    order: 2;
+}
+
+.flex-item:nth-child(2) {
+    align-self: center;
+}
+
+.flex-item:nth-child(4) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(1) {
+    align-self: center;
+    margin-top: 200px;
+}
+
+.flex-item:nth-child(5) {
+    align-self: flex-start;
+    order: -1;
+}

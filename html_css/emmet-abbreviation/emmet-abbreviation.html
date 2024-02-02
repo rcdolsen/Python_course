@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://docs.emmet.io/cheat-sheet/</title>
+
+</head>
+<body>
+    <!-- "." = classe
+    "#" = id
+    ">" = filha
+    "+" = irmao
+    "<" = pai 
+    "apertar tab pula de um conteudo para outro"-->
+
+    <!-- div.classe1.classe2 -->
+    <div class="classe-um classe-dois"></div>
+    <!-- div#meu-id -->
+    <div id="meu-id"></div>
+    <!-- div#meu-id.minha-classe.outra-classe -->
+    <div id="meu-id" class="minha-classe outra-classe"></div>
+    <!-- div#meu-id.minha-classe.minha-outra-classe{conteudo} -->
+    <div id="meu-id" class="minha-classe minha-outra-classe">conteudo</div>
+    <!-- div#meu-id.minha-classe.minha-outra-classe{conteudo}*3 -->
+    <div id="meu-id" class="minha-classe minha-outra-classe">conteudo</div>
+    <div id="meu-id" class="minha-classe minha-outra-classe">conteudo</div>
+    <div id="meu-id" class="minha-classe minha-outra-classe">conteudo</div>
+    <!-- div#meu-id-$.minha-classe.minha-outra-classe{conteudo $}*3 -->
+    <div id="meu-id-1" class="minha-classe minha-outra-classe">conteudo 1</div>
+    <div id="meu-id-2" class="minha-classe minha-outra-classe">conteudo 2</div>
+    <div id="meu-id-3" class="minha-classe minha-outra-classe">conteudo 3</div>
+    <!-- ul>li{conteudo $}*10 -->
+    <ul>
+        <li>conteudo 1</li>
+        <li>conteudo 2</li>
+        <li>conteudo 3</li>
+        <li>conteudo 4</li>
+        <li>conteudo 5</li>
+        <li>conteudo 6</li>
+        <li>conteudo 7</li>
+        <li>conteudo 8</li>
+        <li>conteudo 9</li>
+        <li>conteudo 10</li>
+    </ul>
+    <!-- ul>(li>a{conteudo $})*3 -->
+    <ul>
+        <li><a href="">conteudo 1</a></li>
+        <li><a href="">conteudo 2</a></li>
+        <li><a href="">conteudo 3</a></li>
+    </ul>
+    <!-- ul>(li>a{conteudo $}[href="http://link.com/conteudo-$"])*3 -->
+    <ul>
+        <li><a href="http://link.com/conteudo-1">conteudo 1</a></li>
+        <li><a href="http://link.com/conteudo-2">conteudo 2</a></li>
+        <li><a href="http://link.com/conteudo-3">conteudo 3</a></li>
+    </ul>
+    <!--     div.minha-classe#home>h1{conteudo}+(p{Mais conteudo}>a{clique aqui}[href="#home"]+{clique outra vez})*2 -->
+    <div class="minha-classe" id="home">
+        <h1>conteudo</h1>
+        <p>Mais conteudo<a href="#home">clique aqui</a>clique outra vez</p>
+        <p>Mais conteudo<a href="#home">clique aqui</a>clique outra vez</p>
+    </div>
+
+    <!-- section>h1+div>(p>span)*3 -->
+    <!-- apertar tab de um conteudo para outro -->
+    <section>
+        <h1>tgfct</h1>
+        <div>
+            <p><span>gftf</span></p>
+            <p><span>tftf</span></p>
+            <p><span>tftf</span></p>
+        </div>
+    </section>
+
+    <!-- NO CSS -->
+
+    <style>
+        body {
+            /* w100p */
+            width: 100%;
+            /* h100vh */
+            height: 100vh;
+            /* m10rem */
+            margin: 10rem;
+            /* p10p */
+            padding: 10%;
+            /* df */
+            display: flex;
+            /* dg */
+            display: grid;
+            /* dn */
+            display: none;
+            /* db */
+            display: block;
+            /* bg */
+            background: #000;
+            /* bgc */
+            background-color: #fff;
+            /* bgi */
+            background-image: url();
+            /* posa */
+            position: absolute;
+            /* t10 */
+            top: 10px;
+            /* b10 */
+            bottom: 10px;
+            /* r10 */
+            right: 10px;
+            /* l10 */
+            left: 10px;
+            /* fl */
+            float: left;
+        }
+    </style>
+</body>
+</html>

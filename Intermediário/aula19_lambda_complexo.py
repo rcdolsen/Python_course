@@ -3,8 +3,10 @@
 def executa(funcao, *args):
     return funcao(*args)
 
+
 def soma(x, y):
     return x + y
+
 
 print(
     executa(
@@ -12,14 +14,16 @@ print(
     ),
     # lambda x, y, e o mesmo que: def soma(x, y)
     # x + y no lambda e o mesmo que return x+ y
-    executa (soma, 2, 3),
+    executa(soma, 2, 3),
     soma(2, 3)
 )
+
 
 def cria_multiplicador(multiplicador):
     def multiplica(numero):
         return numero * multiplicador
     return multiplica
+
 
 print(
     executa(

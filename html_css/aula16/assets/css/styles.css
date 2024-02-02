@@ -1,0 +1,13 @@
+/* tudo dentro do body vai herdar */
+body {
+    font-family: sans-serif;
+    color: brown;
+    font-size: 60px;
+}
+
+/* initial impede que o p herde do body */
+p {
+    font-size: initial;
+    /* ativa a heranca */
+    /* font-size: inherit; */
+}

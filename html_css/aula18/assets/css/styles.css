@@ -1,0 +1,37 @@
+/* https://www.w3schools.com/cssref/css_units.php */
+
+html {
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* vw e uma porcentagem da largura do viewport e vh da altura*/
+.pai {
+    /* width: 100vw; */
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+
+/* em escala proporcionalmente com o tamanho do elemento pai mais proximo */
+/* p {
+    font-size: 1em;
+} */
+
+/* rem escala proporcionalmente com o tamanho do elemento root (html) */
+p {
+    font-size: 1.6rem;
+}
+
+.color-two {
+    background: hotpink;
+}
+
+.color-three {
+    background: blue;
+}
