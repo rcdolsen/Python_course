@@ -1,0 +1,19 @@
+<article class="post">
+    <header>
+        <h2 class="post__title">
+            <a href="{% url "blog:post" post.id %}">
+                {{ post.title }}
+            </a>
+        </h2>
+    </header>
+    <div class="post__body">
+        {% comment %} Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        quas recusandae, tempore alias soluta incidunt quod harum quibusdam
+        qui ex est deserunt dolores quo magni fugiat. In distinctio praesentium
+        porro, molestiae ipsa eligendi animi sequi perspiciatis labore corporis
+        quisquam laboriosam eos accusamus commodi pariatur optio cumque tenetur
+        fuga dolores numquam? {% endcomment %}
+
+        {{ post.body }}
+    </div>
+</article>

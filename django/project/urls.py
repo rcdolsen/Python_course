@@ -17,6 +17,7 @@ Including another URLconf
 # SUBSTITUIDO PELO INCLUDE
 # from blog import views as blog_views  # para nao ter 2 modulos com mesmo nome
 from django.contrib import admin
+from django.http import HttpResponse
 from django.urls import include, path
 
 # SUBSTITUIDO PELO INCLUDE

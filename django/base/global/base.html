@@ -1,0 +1,66 @@
+{% include "global/partials/head.html" %}
+{% include "global/partials/menu.html" %}
+
+{% if context %}
+<h1>{% block text %} {% endblock text %}</h1>
+{% endif %}
+
+{% comment %} also has elif and else {% endcomment %}
+{% comment %} {% if 1 %}
+
+{% elif 2 %}
+
+{% elif 3 %}
+
+{% elif 4 %}
+
+{% else %}
+
+{% endif %} {% endcomment %}
+
+<main class="posts">
+    {% block posts %} {% endblock posts %}
+    {% block home %} {% endblock home %}
+</main>
+
+
+{% comment %} 
+<article class="post">
+    <header>
+<h2 class="post__title">
+    Lorem ipsum dolor sit amet.
+</h2>
+    </header>
+    <div class="post_body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas recusandae, tempore alias soluta incidunt quod harum quibusdam qui ex est deserunt dolores quo magni fugiat. In distinctio praesentium porro, molestiae ipsa eligendi animi sequi perspiciatis labore corporis quisquam laboriosam eos accusamus commodi pariatur optio cumque tenetur fuga dolores numquam?
+    </div>
+</article>
+
+<h2 class="post__title">
+    Lorem ipsum dolor sit amet.
+</h2>
+    </header>
+    <div class="post_body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas recusandae, tempore alias soluta incidunt quod harum quibusdam qui ex est deserunt dolores quo magni fugiat. In distinctio praesentium porro, molestiae ipsa eligendi animi sequi perspiciatis labore corporis quisquam laboriosam eos accusamus commodi pariatur optio cumque tenetur fuga dolores numquam?
+    </div>
+</article>
+
+<h2 class="post__title">
+    Lorem ipsum dolor sit amet.
+</h2>
+    </header>
+    <div class="post_body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas recusandae, tempore alias soluta incidunt quod harum quibusdam qui ex est deserunt dolores quo magni fugiat. In distinctio praesentium porro, molestiae ipsa eligendi animi sequi perspiciatis labore corporis quisquam laboriosam eos accusamus commodi pariatur optio cumque tenetur fuga dolores numquam?
+    </div>
+</article>
+  
+{% comment %}     
+{% include "global/partials/paragraph.html" %}
+{% include "global/partials/paragraph.html" %}
+{% include "global/partials/paragraph.html" %}
+{% include "global/partials/paragraph.html" %}
+{% include "global/partials/paragraph.html" %}
+{% include "global/partials/paragraph.html" %}
+{% endcomment %}
+</body>
+</html> 
