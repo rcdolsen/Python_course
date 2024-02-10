@@ -1,8 +1,11 @@
 import json
 import string
+from pathlib import Path
 from secrets import SystemRandom
 
-FILE_PATH = 'Programas\gerador senhas\senhas_geradas.json'
+BASE_DIR = Path(__file__).parent
+FILE_PATH = BASE_DIR/'senhas_geradas.json'
+print(BASE_DIR)
 
 try:
     with open(FILE_PATH, 'r', encoding='utf8') as file:
