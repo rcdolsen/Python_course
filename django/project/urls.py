@@ -23,7 +23,7 @@ from django.urls import include, path
 # from home import views as home_views  # para nao ter 2 modulos com mesmo nome
 
 # HTTP Request <-> HTTP Response
-# MODEL VIEW TEMPLATE - MVT (MVC)
+# MODEL VIEW TEMPLATE - MVT (MVC - model view controller)
 
 urlpatterns = [
     # SUBSTITUIDO PELO INCLUDE
