@@ -43,7 +43,7 @@ Não canso de ouvir a Maria:
 # print(re.findall(r'\D+', texto))
 
 # print(re.findall(r'\s+', texto, flags=re.I))
-# print(re.findall(r'\S+', texto, flags=re.I))
+print(re.findall(r'\S+', texto, flags=re.I))
 
 # print(re.findall(r'\bflo\w+', texto, flags=re.I))
 # print(re.findall(r'\be\w+', texto, flags=re.I))
